@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/header_footer.css" />
+  </head>
+  <body>
+    <!-- Start HEader  -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="index.html" class="nav__logo">
+            <img src="images/logo.png" />
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+          <div class="h-btn">
+            <a href="signin.html">
+              <button class="btnsignin-popup">Sign in</button>
+            </a>
+          </div>
+        </div>
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                listings <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="dashboard.html" class="dropdown__link">Dashboard</a>
+                </li>
+
+                <li>
+                  <a href="post_property.html" class="dropdown__link"
+                    >Post Property
+                  </a>
+                </li>
+                <li>
+                  <a href="post_property.html" class="dropdown__link"
+                    >My Listings
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Buying <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="my_listing.html" class="dropdown__link">Selling</a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">Renting</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown__link">Buying</a>
+                </li>
+              </ul>
+            </li>
+
+            <!--=============== DROPDOWN 2 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Options <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="search.html" class="dropdown__link">Filter search</a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">All listings</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Help <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="about.html" class="dropdown__link">About us</a>
+                </li>
+
+                <li>
+                  <a href="contact.html" class="dropdown__link">Contact us</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="saved.html" class="nav__link"
+                >saved <i class="far fa-heart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="g-btn">
+          <a href="signin.html">
+            <button class="gbtnsignin-popup">Sign in</button>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- End HEader -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

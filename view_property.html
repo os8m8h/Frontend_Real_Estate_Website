@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a Real Estate Website" />
+    <title>view propery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- Main Template Css File -->
+    <link rel="stylesheet" href="CSS/emlak.css" />
+    <link rel="stylesheet" href="CSS/header_footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start HEader  -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="index.html" class="nav__logo">
+            <img src="images/logo.png" />
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+          <div class="h-btn">
+            <a href="signin.html">
+              <button class="btnsignin-popup">Sign in</button>
+            </a>
+          </div>
+        </div>
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                listings <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="dashboard.html" class="dropdown__link">Dashboard</a>
+                </li>
+
+                <li>
+                  <a href="post_property.html" class="dropdown__link"
+                    >Post Property
+                  </a>
+                </li>
+                <li>
+                  <a href="post_property.html" class="dropdown__link"
+                    >My Listings
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Buying <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="my_listing.html" class="dropdown__link">Selling</a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">Renting</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown__link">Buying</a>
+                </li>
+              </ul>
+            </li>
+
+            <!--=============== DROPDOWN 2 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Options <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="search.html" class="dropdown__link">Filter search</a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">All listings</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Help <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="about.html" class="dropdown__link">About us</a>
+                </li>
+
+                <li>
+                  <a href="contact.html" class="dropdown__link">Contact us</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="saved.html" class="nav__link"
+                >saved <i class="far fa-heart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="g-btn">
+          <a href="signin.html">
+            <button class="gbtnsignin-popup">Sign in</button>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- End HEader -->
+
+    <!-- view propery section starts -->
+    <section class="view-property">
+      <h1 class="heading">property details</h1>
+      <div class="details">
+        <div class="swiper images-container">
+          <div class="swiper-wrapper">
+            <img src="images/p1.png" alt="" class="swiper-slide" />
+            <!-- if empty image 02 -->
+            <img src="images/p2.png" alt="" class="swiper-slide" />
+            <img src="images/p3.png" alt="" class="swiper-slide" />
+            <img src="images/ss.jpg" alt="" class="swiper-slide" />
+            <img
+              src="images/WhatsApp Image 2024-01-02 at 22.55.18_04c5d5fb.jpg"
+              alt=""
+              class="swiper-slide"
+            />
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <h3 class="name">عماره للبيع</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i><span>Sana'a Hail street</span>
+        </p>
+        <div class="info">
+          <p>
+            <i class="fas fa-dollar-sign"></i><span><!---price---></span>
+          </p>
+          <p>
+            <i class="fas fa-user"></i><span><!--name--></span>
+          </p>
+          <p>
+            <i class="fas fa-phone"></i
+            ><a href="tel:1234567890"><!--number--></a>
+          </p>
+          <p>
+            <i class="fas fa-building"></i><span><!--type--></span>
+          </p>
+          <p>
+            <i class="fas fa-house"></i><span><!--offer--></span>
+          </p>
+          <p>
+            <i class="fas fa-calendar"></i><span><!--date--></span>
+          </p>
+        </div>
+        <h3 class="title">details</h3>
+        <div class="flex">
+          <div class="box">
+            <p>
+              <i>rooms :</i><span><!--bhk--></span>
+            </p>
+            <p>
+              <i>deposit amount : </i
+              ><span
+                ><span
+                  class="fas fa-dollar-sign"
+                  style="margin-right: 0.5rem"
+                ></span
+                ><!--deposite--></span
+              >
+            </p>
+            <p>
+              <i>status :</i><span><!--status--></span>
+            </p>
+            <p>
+              <i>bedroom :</i><span><!--bedroom--></span>
+            </p>
+            <p>
+              <i>bathroom :</i><span><!--bathroom--></span>
+            </p>
+            <p>
+              <i>balcony :</i><span><!--balcony--></span>
+            </p>
+          </div>
+          <div class="box">
+            <p>
+              <i>carpet area :</i><span><!--carpet-->sqft</span>
+            </p>
+            <p>
+              <i>age :</i
+              ><span
+                ><!--age-->
+                years</span
+              >
+            </p>
+            <p>
+              <i>total floors :</i><span><!--total_floors--></span>
+            </p>
+            <p>
+              <i>room floor :</i><span><!--room_floor--></span>
+            </p>
+            <p>
+              <i>furnished :</i><span><!--furnished--></span>
+            </p>
+            <p>
+              <i>loan :</i><span><!--loan--></span>
+            </p>
+          </div>
+        </div>
+        <h3 class="title">amenities</h3>
+        <!-- <div class="flex">
+                <div class="box">
+                    <p><i class="fas fa-<?php if($fetch_property['lift'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>lifts</span></p>
+                    <p><i class="fas fa-<?php if($fetch_property['security_guard'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>security guards</span></p>
+                    <p><i class="fas fa-<?php if($fetch_property['play_ground'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>play ground</span></p>
+                    <p><i class="fas fa-<?php if($fetch_property['garden'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>gardens</span></p>
+                    <p><i class="fas fa-<?php if($fetch_property['water_supply'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>water supply</span></p>
+                    <p><i class="fas fa-<?php if($fetch_property['power_backup'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>power backup</span></p>
+                </div>
+                <div class="box">
+                    <p><i class="fas fa-<?php if($fetch_property['parking_area'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>parking area</span></p>
+                    <p><i class="fas fa-<?php if($fetch_property['gym'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>gym</span></p>
+                    <p><i class="fas fa-<?php if($fetch_property['shopping_mall'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>shopping mall</span></p>
+                    <p><i class="fas fa-<?php if($fetch_property['hospital'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>hospital</span></p>
+                    <p><i class="fas fa-<?php if($fetch_property['school'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>schools</span></p>
+                    <p><i class="fas fa-<?php if($fetch_property['market_area'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>market area</span></p>
+                </div> -->
+
+        <h3 class="title">descriprion</h3>
+        <p class="description"><!--description--></p>
+        <form action="" method="post" class="flex-btn">
+          <input type="hidden" name="property_id" value="property_id" />
+          <!-- if -->
+          <button type="submit" name="save" class="save">
+            <i class="fas fa-heart"></i><span>saved</span>
+          </button>
+          <!-- else -->
+          <button type="submit" name="save" class="save">
+            <i class="far fa-heart"></i><span>save</span>
+          </button>
+          <input type="submit" value="send enquiry" name="send" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Us + Footer-->
+    <footer class="footer" data-aos="zoom-in-up">
+      <div class="footer-content">
+        <img src="images/logo.png" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          perspiciatis.
+        </p>
+      </div>
+      <div class="footer-content">
+        <h4>Quick Link</h4>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="buy.html">Buying</a></li>
+        <li><a href="sell.html">Selling</a></li>
+        <li><a href="rent.html">Renting</a></li>
+      </div>
+
+      <div class="footer-content">
+        <h4>Support</h4>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="#Privacy">Privacy Policy</a></li>
+        <li><a href="terms&conditions">Terms & Conditions</a></li>
+      </div>
+
+      <div class="footer-content">
+        <h4>Get in touch</h4>
+        <li><a href="mailto">hello@emlak.com</a></li>
+
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".images-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 200,
+          modifier: 3,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
